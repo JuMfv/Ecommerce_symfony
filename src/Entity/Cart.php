@@ -17,7 +17,7 @@ class Cart
     private ?int $id = null;
 
     #[ORM\ManyToOne(inversedBy: 'carts')]
-    private ?user $CartUser = null;
+    private ?User $CartUser = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $Date = null;
@@ -38,12 +38,12 @@ class Cart
         return $this->id;
     }
 
-    public function getCartUser(): ?user
+    public function getCartUser(): ?User
     {
         return $this->CartUser;
     }
 
-    public function setCartUser(?user $CartUser): self
+    public function setCartUser(?User $CartUser): self
     {
         $this->CartUser = $CartUser;
 
