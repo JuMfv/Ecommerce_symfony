@@ -97,6 +97,14 @@ class Product
         return $this;
     }
 
+    #[ORM\PostRemove]
+    public function deleteImage(){
+        if($this->image != null){
+            unlink(__DIR__.'/../../public/uploads/'.$this->image);
+        }
+        return true;
+    }
+
     public function getCartContent(): ?CartContent
     {
         return $this->cartContent;
