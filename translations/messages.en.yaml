@@ -10,3 +10,14 @@ Price : Price
 Stock: Stock
 Save : Save
 Image : Image
+
+
+
+user:
+  title:  User List
+
+
+  
+LasteName : LasteName
+FirstName : FirstName
+Password : Mot de Passe

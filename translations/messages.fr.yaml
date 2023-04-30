@@ -9,3 +9,10 @@ Price : Prix
 Stock: Stock
 Save : Sauvguarder
 Image : Photo
+
+user:
+  title: Liste des utilisateurs
+
+LasteName : Nom
+FirstName : Prénom
+Password : Mot de Passe
