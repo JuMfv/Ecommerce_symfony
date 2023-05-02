@@ -137,7 +137,7 @@ class AdminProductController extends AbstractController
         return $this->redirectToRoute('app_product_index', [], Response::HTTP_SEE_OTHER);
     }*/
 
-    #[Route('/delete/{id}', name:'delete_product')]
+    #[Route('/delete/{id}', name:'delete_admin_product')]
     public function delete(Product $product = null, EntityManagerInterface $em){
         if($product == null){
             $this->addFlash('danger', 'Produit introuvable');

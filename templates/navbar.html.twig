@@ -1,23 +1,15 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary" >
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand mb-0 h1" href="#">E-Commerce </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Accueil</a>
+            <a class="nav-link active" href="{{path('app_product_index')}}">Produits</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{path('app_product_index')}}">Produits</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{path('app_register')}}">Inscription</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{path('app_login')}}">Identification</a>
-          </li>
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Espace admin
@@ -33,7 +25,11 @@
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Chercher</button>
+          <button class="btn btn-sm btn-outline-secondary" type="submit">Chercher</button>
+        </form>
+        <form class="container-fluid justify-content-start">
+          <a href="{{path('app_register')}}"> <button class="btn btn-outline-success me-2" type="button">Inscription</button> </a>
+          <a href="{{path('app_login')}}"><button class="btn btn-outline-success me-2" type="button">Connexion</button></a> 
         </form>
       </div>
     </div>
