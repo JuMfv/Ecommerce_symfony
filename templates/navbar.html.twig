@@ -23,14 +23,16 @@
           </li>
           
         </ul>
+        <form class="container-fluid justify-content-start">
+          <a href="{{path('app_register')}}"> <button class="btn btn-outline-success me-2" type="button">Inscription</button> </a>
+          <a href="{{path('app_login')}}"><button class="btn btn-outline-success me-2" type="button">Connexion</button></a> 
+          <button type="button" class="btn btn-light">Panier</button>
+        </form>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
           <button class="btn btn-sm btn-outline-secondary" type="submit">Chercher</button>
         </form>
-        <form class="container-fluid justify-content-start">
-          <a href="{{path('app_register')}}"> <button class="btn btn-outline-success me-2" type="button">Inscription</button> </a>
-          <a href="{{path('app_login')}}"><button class="btn btn-outline-success me-2" type="button">Connexion</button></a> 
-        </form>
+        
       </div>
     </div>
   </nav>

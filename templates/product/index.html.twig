@@ -7,6 +7,7 @@
     <h1>{{ 'product.title'|trans }}</h1>
     
     {% for product in products %}
+    
     <div class="card" style="width: 18rem;">
         {% if product.image is not null %}
             <img src="{{ asset('/uploads/'~ product.image) }}" class="img-thumbnail" alt="...">
@@ -15,7 +16,7 @@
             <h5 class="card-title">{{ product.name }}</h5>
             <p class="card-text">{{ product.Description }}.</p>
             <p class="card-text">{{ product.Price }}€</p>
-            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
+            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Voir Détail</a>
 
             <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
         </div>
