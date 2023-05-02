@@ -1,25 +1,16 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Product index{% endblock %}
+{% block title %}Hello LookupController!{% endblock %}
 
 {% block body %}
+<div>
+    <form>
+    <input type="search" name="search" placeholder="Rechercher ..." />
+    <button type="submit"> Rechercher</button>
+    </form>
+</div>    
 
-    <h1>{{ 'product.title'|trans }}</h1>
-    
-    <table class="table">
-        <thead>
-            <tr>
-                
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Stock</th>
-                <th>Image</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for product in products %}
+{% for product in products %}
             <tr>
                 <td>{{ product.name }}</td>
                 <td>{{ product.Description }}</td>
@@ -52,10 +43,5 @@
                 <td colspan="7">no records found</td>
             </tr>
         {% endfor %}
-        </tbody>
-    </table>
-
-    <a href="{{ path('app_product_new') }}"class="btn btn-primary">
-        Ajouter un Produit
-    </a>
+    
 {% endblock %}

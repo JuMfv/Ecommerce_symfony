@@ -5,6 +5,8 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
     upload_directory: '%kernel.project_dir%/public/uploads'
+    stripe_sk : 'sk_test_51MytimL2ikZVJpp5A8Sk1IlHNkMUStruWarU8cLlwzFkbxrxLEPtvzCow7vI7sFhsJqHcBGJIyKpnE5iQbA4bl9O00qQJOrHyn'
+
 
 services:
     # default configuration for services in *this* file

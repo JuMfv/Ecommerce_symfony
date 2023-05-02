@@ -10,23 +10,20 @@
                <div class="col-lg-12 offset-lg-1 pt-1">
                    <h2 class "pt-md-2 my-4 mt-lg-5">Mon panier</h2>
                    <p>Ajouter d'autres produits disponibles sur le site <a href="{{ path('app_product_index') }}">Voir les produits</a></p>
-                    {% set total = null %}
-
-                   {% for product in cart %}
-                      {% set total = total + (product.product.price * product.quantite) %}
-
+                    
+                        {% for product in cart %}
                        <a class="d-inline-block flex-shrink-e bg-secondary rounded-1 p-sm-2 p-xl-3 mb-2 mb-sm-0" > 
                                   <img src="{{ asset('/uploads/'~ product.product.image) }}" style="max-width: 150px;" />
 
                        
                                    <h3>  {{ product.product.name}} </h3>
-                                   <P>{{ product.product.price}} €</р>
+                                   <P>{{ product.product.price}} € </р>
                                    
 
 
                                
                                <div class="text-end ms-auto">
-                                   <div class="fs-S mb-2">{{ (total / 100)|number_format(2,',',',') }} €</div>
+                                   {#<div class="fs-S mb-2">{{ (total / 100)|number_format(2,',',',') }} €</div>#}
                     
                                 </div>
 

@@ -16,7 +16,7 @@ class CartContent
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\OneToMany(mappedBy: 'cartContent', targetEntity: product::class)]
+    #[ORM\OneToMany(mappedBy: 'cartContent', targetEntity: Product::class)]
     private Collection $product;
 
     #[ORM\ManyToOne(inversedBy: 'cartContents')]

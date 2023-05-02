@@ -150,4 +150,6 @@ class ProductController extends AbstractController
         return $this->redirectToRoute('app_product_index');
     }
 
+    
+
 }
