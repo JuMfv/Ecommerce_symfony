@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Panier!{% endblock %}
+
+{% block body %}
+ <div class="container p-5 my-5 border">
+   <form action="/action_page.php">
+        <h3 class="mb-3 ">Connexion</h3>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Adresse mail:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+        </div>
+        
+        <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+        </div>
+        <div class="form-check mb-3">
+            <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Connexion</button>
+   </form> 
+</div> 
+
+
+
+
+<div class="container p-5 my-5 border">
+    <form action="/action_page.php" class="was-validated">
+            <h3 class="mb-3 ">Inscription</h3>
+    <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Votre Nom:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Julien Mfochive" name="uname" required>
+        <div class="valid-feedback">Valide.</div>
+        <div class="invalid-feedback">Veuillez remplir ce champ.</div>
+    </div>
+    <div class="mb-3">
+        <label for="pwd" class="form-label">Mot de passe:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="••••••••••" name="pswd" required>
+        <div class="valid-feedback">Valide.</div>
+        <div class="invalid-feedback">Veuillez remplir ce champ.</div>
+    </div>
+    <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+        <label class="form-check-label" for="myCheck">Les infos remplis sont vrais.</label>
+        <div class="valid-feedback">Valide.</div>
+        <div class="invalid-feedback">cochez cette case pour continuer.</div>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Inscription</button>
+    </form> 
+
+
+
+
+    <div class="container p-5 my-5 border">
+   <form action="/action_page.php">
+        <h3 class="mb-3 ">Nouveau Produit</h3>
+        <div class="row mb-3 mt-3">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Nom du Produit" name="email">
+            </div>
+            <div class="col">
+                <input type="password" class="form-control" placeholder="Prix" name="pswd">
+            </div>
+        </div>
+        <div class="row mb-3 mt-3">
+            <div class="col">
+                 <select class="form-select">
+                    <option>5</option>
+                    <option>10</option>
+                    <option>15</option>
+                    <option>20</option>
+                </select> 
+            </div>
+            <div class="col input-group">
+                <input type="text" class="form-control" placeholder="Image" name="pswd">
+                <span class="input-group-text">Choisir la fichier</span>
+            </div>
+        </div>
+        <div class="row mb-3 mt-3">
+        <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+        </div>
+        <button type="submit" class="btn btn-outline-primary">Sauvegarder</button>
+   </form> 
+
+
+
+
+
+</div> 
+
+
+</div> 
+
+
+{% endblock %}

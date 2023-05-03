@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}DetailProduit!{% endblock %}
+
+{% block body %}
+    <div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Nom_Produit</h3>
+      <div class="fakeimg">Fake Image</div>
+      
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-8">
+      <h5>Prix:</h5>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+      <div class="mt-5"></div>
+      <button type="button" class="btn btn-outline-secondary">Ajouter au Panier</button>
+      <button type="button" class="btn btn-secondary">Achetez cet article</button>
+    </div>
+  </div>
+</div>
+
+<div class="mt-5 p-4 bg-dark text-white text-center fixed-bottom">
+  <p>Footer</p>
+</div>
+{% endblock %}
