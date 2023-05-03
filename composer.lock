@@ -2271,14 +2271,7 @@
             "time": "2023-04-04T19:13:21+00:00"
         },
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> a705a9a (Ajout de mon code)
->>>>>>> 0f6d431da1fbe0d0a933663ca54faa1a8c3a25dd
-=======
->>>>>>> a705a9a (Ajout de mon code)
->>>>>>> 0f6d431da1fbe0d0a933663ca54faa1a8c3a25dd
+
             "name": "symfony/asset",
             "version": "v6.2.7",
             "source": {
@@ -7534,7 +7527,6 @@
             "time": "2023-04-26T19:56:04+00:00"
         },
         {
->>>>>>> a705a9a (Ajout de mon code)
             "name": "twig/extra-bundle",
             "version": "v3.5.1",
             "source": {

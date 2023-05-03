@@ -3,61 +3,27 @@
 {% block title %}Product index{% endblock %}
 
 {% block body %}
-
+    <div class="container pt-5 ">
+    <div class= "row">
     <h1>{{ 'product.title'|trans }}</h1>
     
     {% for product in products %}
     
-    <div class="card" style="width: 18rem;">
+    <div class="card col" style="width: 18rem;">
         {% if product.image is not null %}
             <img src="{{ asset('/uploads/'~ product.image) }}" class="img-thumbnail" alt="...">
         {% endif %}
-        <div class="card-body">
+        <div class="card-body ">
             <h5 class="card-title">{{ product.name }}</h5>
             <p class="card-text">{{ product.Description }}.</p>
             <p class="card-text">{{ product.Price }}€</p>
-            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Voir Détail</a>
-
-
-                <td>
-                {% if product.image is not null %}
-                        <img src="{{ asset('/uploads/'~ product.image) }}" style="max-width: 250px;" />
-                    {% endif %}
-                </td>
-                <td>
-                    
-                    <a href="{{ path('app_product_show', {'id': product.id}) }}"class="btn btn-primary">
-                        Voir
-                    </a>
-                    
-                    
-
-                    <a  href="{{path('cart_add', {'id':product.id}) }}"class="btn btn-success">
-                         Ajouter
-                    </a>
-
-                    
-                    
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
+            <a href="{{path('app_product_show', {'id':product.id}) }}" class="btn btn-outline-primary">Voir Détail</a>
+            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-outline-primary">Ajouter au Panier</a>
+        </div>  
+        </div>  
+        
         {% endfor %}
-        </tbody>
-
-
-            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
-        </div>
+        </div>   
     </div>
-{% else %}
-    <p>Il n'y a pas de produits à afficher.</p>
-{% endfor %}
 
-    </table>
-
-    <a href="{{ path('app_product_new') }}"class="btn btn-primary">
-        Ajouter un Produit
-    </a>
 {% endblock %}
