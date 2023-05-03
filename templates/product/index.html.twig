@@ -6,26 +6,19 @@
 
     <h1>{{ 'product.title'|trans }}</h1>
     
-    <table class="table">
-        <thead>
-            <tr>
-                
-                <th>Name</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Stock</th>
-                <th>Image</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for product in products %}
-            <tr>
-                <td>{{ product.name }}</td>
-                <td>{{ product.Description }}</td>
-                <td>{{ product.Price }}€</td>
-                <td>{{ product.Stock }}</td>
+    {% for product in products %}
+    
+    <div class="card" style="width: 18rem;">
+        {% if product.image is not null %}
+            <img src="{{ asset('/uploads/'~ product.image) }}" class="img-thumbnail" alt="...">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.Description }}.</p>
+            <p class="card-text">{{ product.Price }}€</p>
+            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Voir Détail</a>
 
+<<<<<<< HEAD
                 <td>
                 {% if product.image is not null %}
                         <img src="{{ asset('/uploads/'~ product.image) }}" style="max-width: 250px;" />
@@ -53,6 +46,14 @@
             </tr>
         {% endfor %}
         </tbody>
+=======
+            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
+        </div>
+    </div>
+{% else %}
+    <p>Il n'y a pas de produits à afficher.</p>
+{% endfor %}
+>>>>>>> 0f6d431da1fbe0d0a933663ca54faa1a8c3a25dd
     </table>
 
     <a href="{{ path('app_product_new') }}"class="btn btn-primary">

@@ -1,0 +1,15 @@
+{% for product in products %}
+    <div class="card" style="width: 18rem;">
+        {% if product.image is not null %}
+            <img src="{{ asset('/uploads/'~ product.image) }}" class="card-img-top" alt="...">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ product.name }}</h5>
+            <p class="card-text">{{ product.Description }}.</p>
+            <p class="card-text">{{ product.Price }}€</p>
+            <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
+        </div>
+    </div>
+{% else %}
+    <p>Il n'y a pas de produits à afficher.</p>
+{% endfor %}

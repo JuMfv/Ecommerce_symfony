@@ -4,7 +4,17 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "cdc8f09ac756a64bc95c2ea116c3eae2",
+=======
+
+    "content-hash": "4a3a16317af347c3cce3abbdf91d7c82",
+
+    "content-hash": "9e7cffeb066aa344053d938195348ed1",
+
+    "content-hash": "3c8175718a072737d2ebc2ab1cda3526",
+
+>>>>>>> 0f6d431da1fbe0d0a933663ca54faa1a8c3a25dd
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2263,6 +2273,10 @@
             "time": "2023-04-04T19:13:21+00:00"
         },
         {
+<<<<<<< HEAD
+=======
+>>>>>>> a705a9a (Ajout de mon code)
+>>>>>>> 0f6d431da1fbe0d0a933663ca54faa1a8c3a25dd
             "name": "symfony/asset",
             "version": "v6.2.7",
             "source": {
@@ -7479,6 +7493,46 @@
             "time": "2023-01-04T12:46:15+00:00"
         },
         {
+            "name": "twbs/bootstrap-icons",
+            "version": "v1.10.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twbs/icons.git",
+                "reference": "648aa8238437d9da9227f6273cc163ec5841382d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twbs/icons/zipball/648aa8238437d9da9227f6273cc163ec5841382d",
+                "reference": "648aa8238437d9da9227f6273cc163ec5841382d",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
+                }
+            ],
+            "description": "Official open source SVG icon library for Bootstrap",
+            "homepage": "https://icons.getbootstrap.com/",
+            "keywords": [
+                "bootstrap",
+                "icon font",
+                "icons",
+                "svg"
+            ],
+            "support": {
+                "issues": "https://github.com/twbs/icons/issues",
+                "source": "https://github.com/twbs/icons/tree/v1.10.5"
+            },
+            "time": "2023-04-26T19:56:04+00:00"
+        },
+        {
+>>>>>>> a705a9a (Ajout de mon code)
             "name": "twig/extra-bundle",
             "version": "v3.5.1",
             "source": {
