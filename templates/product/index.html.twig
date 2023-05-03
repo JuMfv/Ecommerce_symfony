@@ -18,7 +18,7 @@
             <p class="card-text">{{ product.Price }}€</p>
             <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Voir Détail</a>
 
-<<<<<<< HEAD
+
                 <td>
                 {% if product.image is not null %}
                         <img src="{{ asset('/uploads/'~ product.image) }}" style="max-width: 250px;" />
@@ -46,14 +46,15 @@
             </tr>
         {% endfor %}
         </tbody>
-=======
+
+
             <a href="{{path('cart_add', {'id':product.id}) }}" class="btn btn-primary">Ajouter au panier</a>
         </div>
     </div>
 {% else %}
     <p>Il n'y a pas de produits à afficher.</p>
 {% endfor %}
->>>>>>> 0f6d431da1fbe0d0a933663ca54faa1a8c3a25dd
+
     </table>
 
     <a href="{{ path('app_product_new') }}"class="btn btn-primary">
